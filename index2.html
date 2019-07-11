@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129523162-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129523162-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fórmula da Área</title>
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+          <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]
+    <! Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+        <!--Fórmulas-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+<body>
+
+<div class="p-3 mb-2 bg-info">
+        <div class="container" >
+            <div class="row">
+                    <div class="col-sm-4 col-md-12 col-xs-8">
+                        <h1 class="text-center">Fórmula da Área</h1>
+                        <h2 class="blog-post-title text-center">Como calcular a área de um triângulo?</h2> <br>
+                        <!-- <img class="img-center img-resposive" src="IMGfor2.jpeg" alt="Fórmula da área" width="120" height="80"> -->
+                        <p class="text-center"> `Área = (b xx h)/2` </p>
+                                
+                            
+                    </div>
+            </div>
+        </div>
+
+    <div class="col-md-6 col-md-offset-3">
+        
+        <div class="row">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+                    <p class="blog-post-meta text-left">Na maioria das situações, usamos as medidas da base e da altura de um triângulo para calcular a sua área.
+                            Considere o triângulo representado abaixo, sua área será calculada, usando a seguinte fórmula: Sendo,
+                            <ul>
+                                <li>`Área:` área do triângulos</li>
+                                <li>`b:` base</li>
+                                <li>`h:` altura</li>
+                            </ul>
+                            </p>
+                <h5 class="text-center">Preencha as lacunas a baixo com os valores do triângulo</h5>
+                <p class="text-center">
+                    `b=` <input id="ba" type="number" placeholder="Base" required><br>
+                    `h=` <input id="h" type="number" placeholder="Altura" required>  
+                </p>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4">
+                <br>
+                <h5 class="text-center">Exemplo:</h5>
+                <img class="img-resposive img-center" src="imagens/IMGtrian2.jpeg" alt="triângulo" width="200" height="140">
+            </div>
+        </div>
+        <button type="button" class="btn btn-success btn-center" onclick="calcularA()">Calcular</button><hr>
+        <p class="text-center"> Resultado=<output id="area2"> 0 </output> </p>
+        <button type="reset" class="btn btn-warning btn-center">Limpar</button>
+        <button type="button" class="btn btn-defult" href="index.html" onClick="history.go(-1)">Voltar</button>
+    
+    </div>
+</div>
+    <script src="ref.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+
+    </blockquote>
+
+</div>            
+    
+</body>
+</html>

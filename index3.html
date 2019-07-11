@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129523162-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129523162-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fórmula dos Vértices</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]
+    <! Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+    <!--Fórmulas-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+</head>
+<body>
+    <div class="p-3 mb-2">
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-sm-4 col-md-12 col-xs-8">
+                    <h1 class="text-center">Fórmula dos vértices</h1><br>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <form>
+                    <div class="col-md-6 col-md-offset-3">
+                        <p class="blog-post-meta text-left"> Considere um triângulo no plano cartesiano de vértices `A(x_a, y_a)`, `B(x_b, y_b)` e `C(x_c, y_c)`. A área desse triângulo é dada por: `A = 1/2 *|D|`</p>
+                        <img class="img-center displayed img-responsive" src="imagens/triangulo1.jpg" alt="Triângulo">
+                        <p>Onde:
+                            `[[x_a,y_a,1],[x_b,y_b,1],[x_c,y_c,1]]`
+                            Observe que a área é obtida multiplicando ½ pelo módulo do determinante das coordenadas dos vértices. 
+                        </p>    
+                    </div>
+                    <div class="col-sm-4 col-md-6 col-xs-12">                   
+                        <p class="text-center">Preencha as lacunas a baixo com os valores do triângulo:</p><br>
+                        <p class="text-center">
+                            `A=`<input id="xa" type="number" placeholder="`x_a`" required="required">  <input id="ya" type="number" placeholder="`y_a`" required="required"><br>
+                            `B=`<input id="xb" type="number" placeholder="`x_b`" required="required">  <input id="yb" type="number" placeholder="`y_b`" required="required"><br>
+                            `C=`<input id="xc" type="number" placeholder="`x_c`" required="required">  <input id="yc" type="number" placeholder="`y_c`" required="required">
+                        <br>
+                    </div>    
+                    <div class="col-sm-4 col-md-12 col-xs-8">
+                            <button type="button" class="btn btn-success btn-center" onclick="calcularV()">Calcular</button>
+                            <hr>
+                            <p class="text-center">Resultado=<output id="area3"> 0 </output> </p>
+                            <button type="reset" class="btn btn-warning btn-center">Limpar</button>
+                            <button type="button" class="btn btn-defult btn-center" href="index.html" onClick="history.go(-1)">Voltar</button>                
+                    </div>        
+                </form>
+            </div>
+        </div>
+                    
+
+        <script src="ref.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+          <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/vendor/holder.min.js"></script>
+        <script>
+          Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+          });
+        </script>
+    
+        
+    </div>
+
+</body>
+</html>

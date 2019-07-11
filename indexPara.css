@@ -1,0 +1,61 @@
+.content-site {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.header-site1 {
+    background-image: url(math.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 300px;
+    padding-bottom: 300px;
+    
+    
+}
+.header-site {
+    background-image: url(fundo.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 300px;
+    padding-bottom: 300px;
+   
+}
+.content-site1 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.blog-title {
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #ffffff;
+}
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+p{
+    font-family: Georgia;
+}
+body{
+    background-color: antiquewhite;
+}
+html {
+    height: 100%;
+}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+h1{
+    font-family: cursive;
+}
+@font-face {
+	font-family: "Ailerons-Typeface";
+	src: local("Ailerons-Typeface"), url("url(C:\Users\Test\Documents\Página\Site1.1\ailerons\Ailerons-Typeface.otf");
+	}

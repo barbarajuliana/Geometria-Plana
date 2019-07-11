@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129523162-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129523162-1');
+</script>
+<style>
+    body {
+      background-color:#fefbd8;
+    }
+    div {
+      background-color: #d5f4e6;
+    }
+ </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fórmula de Herão</title>
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+          <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <!--[endif]
+  <! Bootstrap core CSS -->
+  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+  <link href="blog.css" rel="stylesheet">
+  <!--Fórmulas-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+</head>
+
+<body>
+         <div class="p-3 mb-2">
+<div class="container-fluid" >
+       <div class="row">
+            <div class="col-sm-4 col-md-12 col-xs-8">
+                
+                <h1 class="text-center">Fórmula de Herão</h1><br>
+                    <!--<img class="img-center img-responsive" src="IMGfor1.jpeg" alt="Fórmula de Herão" width="300" height="140">-->
+                    <p class="text-center">`S = sqrt (p*(p-a)*(p-b)*(p-c))`</p>
+
+                
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-md-offset-3">
+        <form>
+            <div class="row">
+                <div class="col-md-8 col-xs-8 col-sm-8">
+                    <p class="blog-post-meta text-left"> A Fórmula de Herão utiliza os semiperímetros (metade do perímetro) e os lados do triângulo. Onde,
+                        <ul>
+                            <li>`S:` área do triângulo</li>
+                            <li>`p:` semiperímetro</li>
+                            <li>`a, b e c:` lados do triângulo </li>
+                        </ul>
+                    </p>
+                    
+                        <h5>Condição de existência de um triângulo</h5>
+                    <p class="text-justify">
+                            Para construir um triângulo não podemos utilizar qualquer medida, tem que seguir a condição de existência:
+                            Para construir um triângulo é necessário que a medida de qualquer um dos lados seja menor que a soma das medidas dos outros dois e maior que o valor absoluto da diferença entre essas medidas.
+                    </p>
+                    <h4 class="text-center">Preencha as lacunas a baixo com os valores do triângulo</h4><br>
+                    <p class="text-center">
+                    `a=` <input id="a" type="number" placeholder="Lado a" required> <br>
+                    `b=` <input id="b" type="number" placeholder="Lado b" required><br>
+                    `c=` <input id="c" type="number" placeholder="Lado c" required>  
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4"><br>
+                    <h5 class="text-center">Exemplo:</h5>
+                    <img class="img-center img-responsive" src="imagens/IMGtrian1.jpeg" alt="triângulo" width="250" height="130">
+                </div>
+            </div>
+                <button type="button" class="btn btn-success btn-center" onclick="calcularP()"> Calcular </button>
+                <hr>
+                <p class="text-center">Resultado: <output id="area"> 0 </output> </p>
+                <button type="reset" class="btn btn-warning btn-center">Limpar</button>
+                <button type="button" class="btn btn-defult" href="index.html" onClick="history.go(-1)">Voltar</button>
+        </form>
+        </div>
+                </div>
+                </div>
+    </div>
+</div>     
+
+
+    <script src="ref.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+ </blockquote>
+    </div>
+
+</body>
+
+</html>
